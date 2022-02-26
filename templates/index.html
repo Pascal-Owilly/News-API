@@ -25,8 +25,16 @@
     <section id="main">
         <div class="banner"><img src="" alt=""></div>
         <div class="head">Today's Headlines</div>
+        {% for news,description,images,date_published,news_url in articles %}
+         <div class="wrapper">
+             <div class="item">
+                 <a href="{{url}}"><img src="{{images}}" alt=""></a>
+             </div>
+         </div>
+        {% endfor%}
         <div class="head">Breaking News</div>
     </section>
+
     
 </body>
 </html>
