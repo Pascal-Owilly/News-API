@@ -51,12 +51,17 @@
          <div class="container-fluid">
              <div class="row">
                  <div class="col-md-4">
-                    <a href="{{url}}"><img src="{{images}}" alt=""></a>
-                    <a href="{{url}}">{{title}}</a>
-                    <a href="{{url}}">{{description}}</a>
-                    <hr>
-                    <a href="{{url}}">{{date_published}}</a>
+                    <a style="color: blue;margin-right: 1rem;" href="{{url}}"><img src="{{images}}" alt=""></a>
+                  
                  </div>
+                 <div class="col-md-8">
+                  <a style="color: blue;" href="{{url}}">{{title}}</a>
+                  <a style="color: black;" href="{{url}}">{{description}}</a>
+                  <hr>
+                  <a style="color: rgb(99, 80, 18);" href="{{url}}">{{date_published}}</a>
+                 </div>
+                
+
              </div>        
          </div>
         {% endfor%}
@@ -128,19 +133,11 @@
           <!-- Links -->
           <h6 class="text-uppercase font-weight-bold">Products</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <a href="#!">MDBootstrap</a>
-          </p>
-          <p>
-            <a href="#!">MDWordPress</a>
-          </p>
+         
           <p>
             <a href="#!">BrandFlow</a>
           </p>
-          <p>
-            <a href="#!">Bootstrap Angular</a>
-          </p>
-  
+        
         </div>
         <!-- Grid column -->
   
@@ -148,19 +145,17 @@
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
   
           <!-- Links -->
-          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <h6 class="text-uppercase font-weight-bold">More news</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a href="#!">Your Account</a>
+            <a href="#!">Sign up to get more news</a>
           </p>
           <p>
-            <a href="#!">Become an Affiliate</a>
+            <a href="#!">Affiliate marketing</a>
           </p>
+        
           <p>
-            <a href="#!">Shipping Rates</a>
-          </p>
-          <p>
-            <a href="#!">Help</a>
+            <a href="#!">About us</a>
           </p>
   
         </div>
@@ -174,31 +169,15 @@
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
             <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-          <p>
-            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
-          <p>
-            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-          <p>
+         
             <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
   
         </div>
-        <!-- Grid column -->
-  
       </div>
-      <!-- Grid row -->
-  
-    </div>
-    <!-- Footer Links -->
-  
-    <!-- Copyright -->
+    </div>  
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  
+    
   </footer>
-  <!-- Footer -->
-
     
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
