@@ -12,12 +12,15 @@ def home():
     # To get athorize we use the id and the api_key
     # We use sources provided by the news sites
     newsapi = NewsApiClient(api_key="88cdeb5bea694d6888cd2dda6e6fae00")
-    top_news = newsapi.get_top_headlines(sources = 'bbc-news') 
+    all_news = newsapi.get_everything(sources = 'cnn') 
      
     # Fetching articles of the top newss headlines
-    top_articles = top_news['articles']
+    all_articles = all_news['articles']
+    #  Get all articles
 
-    # Creating empty lists to store the values
+
+
+    # Creating empty lists to store the top headlines 
     news = []
     description = []
     images = []
@@ -25,8 +28,8 @@ def home():
     news_url = []
 
 # Use for loops to store all our contents
-    for i in range(len(top_articles)):
-        top_news_articles = top_articles[i]
+    for i in range(len(all_articles)):
+        top_news_articles = all_articles[i]
 
         # apppend articles into the lists
         news.append(top_news_articles['title'])
@@ -37,11 +40,23 @@ def home():
 
         # Make a zip to find the contents directly
     articles = zip(news,description,images,date_published,news_url)
+
+
+
+    # all_top_news = newsapi.get_everything(sources = 'bbc-news') 
+    #  # Creating empty lists to store the top headlines 
+   
+
 # We now render this in our .html
+
+
+
+
+
     return render_template("index.html",articles=articles)  
 
  
- 
+    
 
 if __name__=='__main__':
     app.run(debug=True)
