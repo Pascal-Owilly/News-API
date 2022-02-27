@@ -12,7 +12,7 @@ def home():
     # To get athorize we use the id and the api_key
     # We use sources provided by the news sites
     newsapi = NewsApiClient(api_key="88cdeb5bea694d6888cd2dda6e6fae00")
-    all_news = newsapi.get_everything(sources = 'bbc-news') 
+    all_news = newsapi.get_everything(sources = 'bbc-news, cnn') 
      
     # Fetching articles of the top newss headlines
     all_articles = all_news['articles']
