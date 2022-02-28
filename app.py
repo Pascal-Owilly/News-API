@@ -15,12 +15,9 @@ def home():
     newsapi = NewsApiClient(api_key="88cdeb5bea694d6888cd2dda6e6fae00")
     all_news = newsapi.get_everything(sources = 'bbc-news, cnn,al-jazeera-english', page_size=60)
 
-
     # Fetching articles of the top newss headlines
     all_articles = all_news['articles']
     #  Get all articles
-
-
 
     # Creating empty lists to store the top headlines 
     news = []
