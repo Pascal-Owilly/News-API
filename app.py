@@ -6,13 +6,16 @@ from importlib.resources import contents
 from flask import Flask,render_template
 from newsapi import NewsApiClient
 
+
 app = Flask(__name__)
 @app.route("/")
 def home():
     # To get athorize we use the id and the api_key
     # We use sources provided by the news sites
     newsapi = NewsApiClient(api_key="88cdeb5bea694d6888cd2dda6e6fae00")
-    all_news = newsapi.get_everything(sources = 'bbc-news, cnn') 
+    all_news = newsapi.get_everything(sources = 'bbc-news, cnn,al-jazeera-english', page_size=60)
+
+
      
     # Fetching articles of the top newss headlines
     all_articles = all_news['articles']
