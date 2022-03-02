@@ -32,7 +32,8 @@ HTML
 CSS
 GIT
 GitHub CLI
-Heroku CLI
+* Heroku CLI
+* Markdown
 Bootstrap
 
 
