@@ -5,7 +5,8 @@ NEWS API APPLICATION
 Basic template to develop a news API with Flask
 
 ## Contributors
-< PASCAL OWILLY>
+*PASCAL OWILLY*
+
 Usage
 -----
 
@@ -25,6 +26,14 @@ Run the sample server
 
     python runserver.py
 
+## TECHNOLOGIES USED
+Python
+HTML
+CSS
+GIT
+GitHub CLI
+Heroku CLI
+Bootstrap
 
 
 License: MIT LICNCE
