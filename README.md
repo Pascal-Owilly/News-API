@@ -34,7 +34,7 @@ Run the sample server
 * GitHub Cli
 * Heroku Cli
 * Markdown
-Bootstrap
+* Bootstrap
 
 
 License: MIT LICNCE
