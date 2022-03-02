@@ -27,12 +27,12 @@ Run the sample server
     python runserver.py
 
 ## TECHNOLOGIES USED
-Python
-HTML
-CSS
-GIT
-GitHub CLI
-* Heroku CLI
+* Python
+* HTML
+* CSS
+* git
+* GitHub Cli
+* Heroku Cli
 * Markdown
 Bootstrap
 
